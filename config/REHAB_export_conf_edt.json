@@ -1,0 +1,121 @@
+{
+    "export": [
+        {
+            "_basePath": "./REHAB/",
+            "_code": "REHAB",
+            "_name": "REHAB complete",
+            "_prefix": "[CONFIG]",
+            "_ownership": {
+                "modeOwner": "OVERWRITE",
+                "modeLastUpdated": "REMOVE",
+                "ownerId": "vUeLeQMSwhN"
+            },
+            "_sharing": {
+                "groupMode": "OVERWRITE",
+                "groups": [
+                    {
+                        "id": "FxouaDX1x6n",
+                        "metadata": "EDIT",
+                        "data": "EDIT"
+                    },
+                    {
+                        "id": "iHDEKA0cjJC",
+                        "metadata": "VIEW",
+                        "data": "EDIT"
+                    },
+                    {
+                        "id": "y74nhiauvTW",
+                        "metadata": "VIEW",
+                        "data": "VIEW"
+                    }
+                ],
+                "groupExport": true,
+                "userMode": "REMOVE",
+                "users": [],
+                "userExport": false,
+                "publicAccess": {
+                    "metadata": "VIEW",
+                    "data": "NONE"
+                }
+            },
+            "_type": "completeAggregate",
+            "_url": [
+                "https://who-dev.dhis2.org/dev236"
+            ],
+            "_version": "1.0.0",
+            "customObjects": [
+                {
+                    "objectIds": [
+                        "aT5pkgRLbw5",
+                        "Uvefj6bDfzo",
+                        "bbsxlCu3Vya",
+                        "wZJCB2cj9jg",
+                        "Re0iJ3vtBzE",
+                        "AGK6oOK4ncb"
+                    ],
+                    "objectType": "organisationUnitGroups"
+                },
+                {
+                    "objectIds": [
+                        "RPKfAe7voO3",
+                        "qVvudaOdniT",
+                        "N6ru55bPe1o",
+                        "klLHQzY0lw2",
+                        "pNNIXV0kOus",
+                        "LQ10SQqGKyf",
+                        "SuZDPYOgFbN",
+                        "bUJKsy9u2xv"
+                    ],
+                    "objectType": "dataElements"
+                },
+                {
+                    "objectIds": [
+                        "wkjpdklqOIt",
+                        "VQT2m5uMawR"
+                    ],
+                    "objectType": "organisationUnitGroupSets"
+                }
+            ],
+            "dashboardIds": [
+                "GITKkzQmDRG",
+                "ntK7bO3ldHQ",
+                "BbSmX4WI5Ds",
+                "YNCN88Tjhmz",
+                "k5jv2AmABT5",
+                "B60Fjl7zGM3",
+                "hW0VnTKgv79"
+            ],
+            "dataElementGroupIds": [
+                "Kh4vLFVnC19"
+            ],
+            "dataSetIds": [
+                "giKizLegiUW",
+                "MGzqZDWvPhL",
+                "WjN1YoDtlOd",
+                "zInFVXb98JD",
+                "Sm2fALTZROS",
+                "tP8et8TNWgF"
+            ],
+            "exportDataSetIds": [
+                "giKizLegiUW",
+                "MGzqZDWvPhL",
+                "WjN1YoDtlOd",
+                "zInFVXb98JD",
+                "Sm2fALTZROS",
+                "tP8et8TNWgF"
+            ],
+            "validationRuleGroupIds": [
+                "KoL6zerDC9p"
+            ],
+            "predictorGroupIds": [
+                "DmiEPcNi1rA"
+            ],
+            "indicatorGroupIds": [
+                "GBsGhzdFlTB"
+            ],
+            "exportIndicatorGroupsIds": [
+                "GBsGhzdFlTB"
+            ]
+        }
+    ]
+}
