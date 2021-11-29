@@ -431,7 +431,7 @@ Purpose: Coverage is measured through the percentage of people with acute and co
 
 06.02.01 - Time trend of functioning change for a specific health condition, by hospital with dedicated ward, last 5 years (user organisation unit)
 
-![Time trend of functioning change for SCI, by hospital with dedicated ward](resources/images/rehab_0060201-en.png)
+![Time trend of functioning change for SCI, by hospital with dedicated ward](resources/images/rehab_060201-en.png)
 
 06.03.01 - Time trend of functioning change (including pre and post scores) for a specific health condition at selected hospital with dedicated ward, last 5 years (user organisation unit)
 
