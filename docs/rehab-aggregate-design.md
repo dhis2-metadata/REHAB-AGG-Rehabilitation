@@ -228,7 +228,7 @@ The predifined organisation unit groups are listed in the table below:
 | REHAB - THC                  | `Re0iJ3vtBzE` | Includes all tertiary health care facilities reporting on rehabilitation  | Analytics                      |
 | Rehab inpatient ward         | `AGK6oOK4ncb` | Includes all facilities with a dedicated rehabilitation ward              | Analytics                      |
 
-For more information on the configuration of the organisation unit groups, please refer to the [Rehabilitation package installation guide](#rehab-installation)
+For more information on the configuration of the organisation unit groups, please refer to the [Rehabilitation package installation guide](#rehab-orgunit-groups)
 
 ### Indicators
 
