@@ -4,6 +4,9 @@
 
 ## Introduction
 
+Yury, What did you write here? Makes no sense!
+
+
 Global trends in health and ageing signal the need for a major scaling up of rehabilitation services in countries around the world and in low- and middle-income countries in particular. Investment in rehabilitation allows people with a health condition to achieve and maintain optimal functioning, by improving their health and by increasing their participation in life. Strengthening rehabilitation in health systems is fundamental to responding to the increasing demand and ensuring that rehabilitation is available and affordable for those who require it. As recommended by the [WHO Rehabilitation 2030 initiative, A Call for Action](https://www.who.int/initiatives/rehabilitation-2030), a key action to strengthen rehabilitation is to collect data relevant to rehabilitation to enhance health information systems (HIS).
 
 The data that are collected through routine rehabilitation health facility reporting, both from individual records and service records, are used to gather information for defining rehabilitation targets and outcomes, clinical decision-making, estimates of service utilization, and quality management. Regular monitoring of rehabilitation services at national and subnational level provides information about their availability and distribution which may inform measures that are taken to achieve Universal Health Coverage (UHC). System level rehabilitation data and information on functioning underpin rehabilitation decision-making in health policy, management and clinical care. Information on functioning is essential to decision-making in rehabilitation at all levels of the health system since the goal of rehabilitation is to optimize functioning in light of impairments, injuries, and acute or chronic diseases.
