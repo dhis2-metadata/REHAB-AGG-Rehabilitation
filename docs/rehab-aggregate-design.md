@@ -18,28 +18,28 @@ Rehabilitation service delivery covers a wide range of activities for various he
 
 **What are the expected outcomes?**
 
-* The indicators guide the data collected and support the integration of rehabilitation into facility level reporting.
+- The indicators guide the data collected and support the integration of rehabilitation into facility level reporting.
 
-* The analysis framework supports health sector decision making for rehabilitation. It informs the analysis, monitoring and evaluation teams, and allows managers to look at the rehabilitation sector performance, including its integration into the health system, trends of health conditions and rehabilitation service utilization, patterns of quality features, and geographic differences for coverage of service delivery over time. The analysis framework should help program managers and health planners answer rehabilitation M&E questions such as: Are rehabilitation services equipped with adequate resources and where are the gaps? To what extent are rehabilitation services used and what are the features of utilization in relation to service capacity, user’s profile, and service delivery platform? How is rehabilitation contributing to UHC? How does rehabilitation effectiveness evolve in time? How well is rehabilitation integrated into the health system, and along the continuum of care? To what extent do people in need of longer stay, high-intensive, multi-disciplinary rehabilitation have access to quality care?
+- The analysis framework supports health sector decision making for rehabilitation. It informs the analysis, monitoring and evaluation teams, and allows managers to look at the rehabilitation sector performance, including its integration into the health system, trends of health conditions and rehabilitation service utilization, patterns of quality features, and geographic differences for coverage of service delivery over time. The analysis framework should help program managers and health planners answer rehabilitation M&E questions such as: Are rehabilitation services equipped with adequate resources and where are the gaps? To what extent are rehabilitation services used and what are the features of utilization in relation to service capacity, user’s profile, and service delivery platform? How is rehabilitation contributing to UHC? How does rehabilitation effectiveness evolve in time? How well is rehabilitation integrated into the health system, and along the continuum of care? To what extent do people in need of longer stay, high-intensive, multi-disciplinary rehabilitation have access to quality care?
 
-* Program managers and planners could use the data for the establishment and follow up of real-time measures regarding accessibility, availability, human resources, quality, and service outcome.
+- Program managers and planners could use the data for the establishment and follow up of real-time measures regarding accessibility, availability, human resources, quality, and service outcome.
 
-* The proposed standard indicators may be used for monitoring purposes of operational and strategic planning for rehabilitation. The data are then collected to track progress towards the objectives of a (national) strategic plan. While the ‘WHO Rehabilitation in Health System – Guide for Action’ document provides guidance for health system strengthening, it contains a section on the monitoring of a rehabilitation strategic plan, called FRAME2. A Rehabilitation Indicators Menu (RIM) with 40 indicators is included for this intent. Of 40 RIM indicators, 11 indicators are collected using data primarily provided by health facilities. As such, these 11 indicators form the basis of the facility indicators list for rehabilitation that are recommended for routine collection by facilities and collated through district health management information systems (DHMIS).
+- The proposed standard indicators may be used for monitoring purposes of operational and strategic planning for rehabilitation. The data are then collected to track progress towards the objectives of a (national) strategic plan. While the ‘WHO Rehabilitation in Health System – Guide for Action’ document provides guidance for health system strengthening, it contains a section on the monitoring of a rehabilitation strategic plan, called FRAME2. A Rehabilitation Indicators Menu (RIM) with 40 indicators is included for this intent. Of 40 RIM indicators, 11 indicators are collected using data primarily provided by health facilities. As such, these 11 indicators form the basis of the facility indicators list for rehabilitation that are recommended for routine collection by facilities and collated through district health management information systems (DHMIS).
 
-## Intended Users
+## Intended users
 
 The information provided through routine data collection and reporting from rehabilitation health facilities needs to be analyzed and used. This is typically done by the following target audience:  
 
-* Ministry of health decision makers such as rehabilitation program managers, data managers and health information system managers;
-* Rehabilitation program partners and program planners;  
-* Health facility managers for rehabilitation;
-* Research institutes involved with the assessment and improvement of rehabilitation data and information systems.  
+- Ministry of health decision makers such as rehabilitation program managers, data managers and health information system managers;
+- Rehabilitation program partners and program planners;  
+- Health facility managers for rehabilitation;
+- Research institutes involved with the assessment and improvement of rehabilitation data and information systems.  
 
-## Module Overview
+## Module overview
 
 The Rehabilitation aggregate package includes 6 proposed data sets for data collection and 7 dashboards.
 
-### Data Sets
+### Data sets
 
 The data entry forms are logically divided by data collection periods and health care facility types.
 
@@ -80,7 +80,7 @@ Essential package availability dataset collects data on the availability of esse
 
 ![Rehabilitation Personnel](resources/images/rehab_personnel_dataset-en.png)
 
-| Personnel Density      |                                                              |
+| Personnel Density      | `Sm2fALTZROS`                                                |
 |------------------------|--------------------------------------------------------------|
 | Data set form type     | **section**                                                  |
 | Data collection period | **yearly**                                                   |
@@ -209,7 +209,7 @@ This data set uses a custom html data entry form that contains six tables:
 
 ![Outreach program uptake](resources/images/rehab_outreach_uptake_dataset-en.png)
 
-### Organisation Unit Groups
+### Organisation unit groups
 
 The Rehabilitation package operates with a set of predefined organisation unit groups. The purpose of these groups is to:
 
@@ -234,7 +234,7 @@ For more information on the configuration of the organisation unit groups, pleas
 
 The configuration of indicators included in the Rehabilitation package is described in more detail in the [Rehabilitation package installation guide](#rehab-indicators)
 
-### Validation Rules
+### Validation rules
 
 To maintain data quality during data collection, the package includes a set of validation rules for the outpatient, inpatient and the Rehab Ward report datasets.
 
