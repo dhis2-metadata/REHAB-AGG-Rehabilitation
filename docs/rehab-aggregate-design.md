@@ -47,11 +47,11 @@ The data entry forms are logically divided by data collection periods and health
 
 ![Bed Density](resources/images/rehab_bed_density_dataset-en.png)
 
-|||
-|--|---|
-| Data set form type | **default**|
-| Data collection period | **yearly** |
-| Facility types | **Rehabilitation facilities with a dedicated rehabilitation inpatient ward** |
+| Bed Density            | `giKizLegiUW`                                                                |
+|------------------------|------------------------------------------------------------------------------|
+| Data set form type     | **default**                                                                  |
+| Data collection period | **yearly**                                                                   |
+| Facility types         | **Rehabilitation facilities with a dedicated rehabilitation inpatient ward** |
 
 Bed density dataset is a standalone dataset that includes 1 data element:
 
@@ -59,16 +59,16 @@ Bed density dataset is a standalone dataset that includes 1 data element:
 
 > **Note**
 >
-> If the Rehabilitation bed density data is already collected in the existing DHIS2 HMIS system, it is possible to replace the proposed data element and its references with the existing element in the system. Please refer to the Rehabilitation package installation guide for information on additional configuration of bed density indicators.
+> If the Rehabilitation bed density data is already collected in the existing DHIS2 HMIS system, it is possible to replace the proposed data element and its references with the existing element in the system. Please refer to the [Rehabilitation package installation guide](#rehab-installation) for information on additional configuration of bed density indicators.
 
-#### Essential Package Availability
+#### Essential Package Availability at PHC
 
 ![Essential Package Availability](resources/images/rehab_pkg_availability_dataset-en.png)
 
-|||
-|--|---|
-| Data set form type| **section** |
-| Data collection period | **yearly** |
+| Essential Package Availability | `MGzqZDWvPhL`                                             |
+|--------------------------------|-----------------------------------------------------------|
+| Data set form type             | **section**                                               |
+| Data collection period         | **yearly**                                                |
 | Facility types | **Primary Healthcare Facilities reporting on Rehabilitation (Rehab PHC)** |
 
 Essential package availability dataset collects data on the availability of essential rehabilitation packages in primary healthcare facilities:
@@ -78,15 +78,15 @@ Essential package availability dataset collects data on the availability of esse
 
 #### Personnel Density
 
-|||
-|--|---|
-| Data set form type | **section** |
-| Data collection period | **yearly** |
-| Facility types | **All facilities reporting on Rehab (Master Facility List)** |
+![Rehabilitation Personnel](resources/images/rehab_personnel_dataset-en.png)
+
+| Personnel Density      |                                                              |
+|------------------------|--------------------------------------------------------------|
+| Data set form type     | **section**                                                  |
+| Data collection period | **yearly**                                                   |
+| Facility types         | **All facilities reporting on Rehab (Master Facility List)** |
 
 Rehabilitation personnel usually include rehabilitation doctors, rehabilitation nurses, physiotherapists, occupational therapists, speech language therapists, prosthetists and orthotists, and psychologists. Other rehabilitation personnel relevant to the country may also be included, for example audiologists, social workers and mid-level rehabilitation occupational groups. It is also possible to include hospital rehabilitation personnel that are not working for the rehabilitation department. A national health workforce plan typically includes a list of occupational groups for the country and it is recommended to consult this list when establishing the reporting system in the country.
-
-![Rehabilitation Personnel](resources/images/rehab_personnel_dataset-en.png)
 
 This dataset collects numbers of the following rehabilitation personnel at facilities:
 
@@ -98,11 +98,11 @@ This dataset collects numbers of the following rehabilitation personnel at facil
 6. Psychologists
 7. Other personnel
 
-If these figures are already collected in the existing DHIS2 HMIS system, it is possible to replace the proposed data element and its references with the existing element in the system. Please refer to the Rehabilitation package installation guide for information on additional configuration of Rehabilitation personnel indicators.
+If these figures are already collected in the existing DHIS2 HMIS system, it is possible to replace the proposed data element and all its occurences with the existing element in the system. Please refer to the [installation guide](#rehab-installation) for information on additional configuration of Rehabilitation personnel data elements and indicators.
 
 ![Population Estimates](resources/images/rehab_population_est_dataset-en.png)
 
-In addition to personnel figures, this data set includes data elements for capturing total population and population group estimates by health conditions:
+In addition to personnel figures, this data set includes data elements for capturing total population and incidence (percentage) for population groups with following health conditions:
 
 1. Amputation
 2. Burns
@@ -111,17 +111,17 @@ In addition to personnel figures, this data set includes data elements for captu
 5. Stroke
 6. TBI
 
-The list of health conditions can be adjusted according to national priorities.
+The list of health conditions can be adjusted according to national guidance.
 
-The ways to calculate health condition group estimates may vary from country to country. As an alternative to data elements, the incidence indicators for calculating population estimates by health conditions are also included in the package.
+The organisation unit level for collection of population and incidence data may vary from use case to use case. Find more information on the configuration of population and personnel data collection  in the [installation guide](#rehab-installation).
 
 #### Inpatient Report
 
-|||
-|--|---|
-| Data set form type | **custom** |
-| Data collection period | **monthly** |
-| Facility types | **All facilities with an inpatient ward (not dedicated Rehab ward) reporting on Rehab (Master Facility List)** |
+| Inpatient Report       | `WjN1YoDtlOd`                                                                                                  |
+|------------------------|----------------------------------------------------------------------------------------------------------------|
+| Data set form type     | **custom**                                                                                                     |
+| Data collection period | **monthly**                                                                                                    |
+| Facility types         | **All facilities with an inpatient ward (not dedicated Rehab ward) reporting on Rehab (Master Facility List)** |
 
 This data set uses a custom html data entry form that contains four tables:
 
@@ -143,11 +143,11 @@ This data set uses a custom html data entry form that contains four tables:
 
 #### Rehab Ward Report
 
-|||
-|--|---|
-| Data set form type | **custom** |
-| Data collection period | **monthly** |
-| Facility types | **All facilities with a dedicated rehabilitation inpatient ward reporting on Rehab (Master Facility List)** |
+| Rehab Ward Report      | `tP8et8TNWgF`                                                                                               |
+|------------------------|-------------------------------------------------------------------------------------------------------------|
+| Data set form type     | **custom**                                                                                                  |
+| Data collection period | **monthly**                                                                                                 |
+| Facility types         | **All facilities with a dedicated rehabilitation inpatient ward reporting on Rehab (Master Facility List)** |
 
 This data set uses a custom html data entry form that contains six tables:
 
@@ -177,11 +177,11 @@ This data set uses a custom html data entry form that contains six tables:
 
 #### Outpatient Report
 
-|||
-|--|---|
-| Data set form type | **custom** |
-| Data collection period | **monthly** |
-| Facility types | **All facilities with an outpatient department reporting on Rehab (Master Facility List)** |
+| Outpatient Report      | `zInFVXb98JD`                                                                              |
+|------------------------|--------------------------------------------------------------------------------------------|
+| Data set form type     | **custom**                                                                                 |
+| Data collection period | **monthly**                                                                                |
+| Facility types         | **All facilities with an outpatient department reporting on Rehab (Master Facility List)** |
 
 This data set uses a custom html data entry form that contains six tables:
 
