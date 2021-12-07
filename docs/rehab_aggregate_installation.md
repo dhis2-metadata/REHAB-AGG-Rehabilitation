@@ -258,7 +258,7 @@ Validation rules included in the package are grouped by data sets for which they
 
 All validation rule groups and the corresponding validation rules are listed in the appendix to this installation guide:
 
-[Rehabilitation - validation rules](resources/rehab-validation-rules.xlsx)
+[Rehabilitation - validation rules](resources/rehab_validation_rules.xlsx)
 
 The organisation unit groups for all validation rules are set to facility level. The facility level value is located in the `"organisationUnitLevels"` property of each validation rule. It is set to `4` by default. Adjust these levels in the metadata file to match the facility level in the target instance befre importing the package.
 
