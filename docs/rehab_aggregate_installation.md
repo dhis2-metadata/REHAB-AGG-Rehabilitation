@@ -221,7 +221,7 @@ If the target instance already has metadata infrastructure, which is used for co
 
 2. Indicators that use the **Population, personnel or incidence data** will be aggregating data at the level/levels where the data is entered.
 
-3. Additional mapping ´, configuration may be required after the package is imported. Refer to the [data set configuration section](#rehab-dataset-config)
+3. Additional mapping and configuration may be required after the package is imported. Refer to the [data set configuration section](#rehab-dataset-config)
 
 > **NOTE**
 >
