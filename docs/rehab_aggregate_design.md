@@ -211,9 +211,9 @@ This data set uses a custom html data entry form that contains six tables:
 
 The Rehabilitation package operates with a set of predefined organisation unit groups. The purpose of these groups is to:
 
-* help the implementers configure the package after importing it into a new or existing DHIS2 instance
-* assign the rehabilitation data sets to the relevant organisation unit groups
-* utilize the preconfigured dashboards for analysis purposes.
+- help the implementers configure the package after importing it into a new or existing DHIS2 instance
+- assign the rehabilitation data sets to the relevant organisation unit groups
+- utilize the preconfigured dashboards for analysis purposes.
 
 The predifined organisation unit groups are listed in the table below:
 
