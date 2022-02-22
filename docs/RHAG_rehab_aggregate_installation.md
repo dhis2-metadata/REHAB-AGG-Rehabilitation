@@ -128,12 +128,12 @@ All codes included in the metadata objects in the current package match the nami
 
 For data element values, use:
 
-    ```SQL
-    UPDATE programstageinstance
-    SET eventdatavalues = jsonb_set(eventdatavalues, '{"<affected data element uid>","value"}', '"<new value>"')
-    WHERE eventdatavalues @> '{"<affected data element uid>":{"value": "<old value>"}}'::jsonb
-    AND programstageid=<database_programsatgeid>;
-    ```
+```SQL
+UPDATE programstageinstance
+SET eventdatavalues = jsonb_set(eventdatavalues, '{"<affected data element uid>","value"}', '"<new value>"')
+WHERE eventdatavalues @> '{"<affected data element uid>":{"value": "<old value>"}}'::jsonb
+AND programstageid=<database_programsatgeid>;
+```
 
 ### Sort order for options
 
@@ -149,46 +149,46 @@ Sort order can be adjusted in the Maintenance app.
 
 The Rehabilitation package contains one option set and two options:
 
-    ```json
-    {
-        "optionSets": [
-            {
-                "name": "YES/NO (numeric)",
-                "id": "TdDqpX1kdd2",
-                "code": "YES_NO_NUM",
-                "valueType": "INTEGER_ZERO_OR_POSITIVE",
-                "options": [
-                    {
-                        "id": "VavIEUmBv8j"
-                    },
-                    {
-                        "id": "Xu8ieCbS7jH"
-                    }
-                ]
-            }
-        ],
-        "options": [
-            {
-                "name": "Yes",
-                "id": "VavIEUmBv8j",
-                "code": "1",
-                "sortOrder": 1,
-                "optionSet": {
-                    "id": "TdDqpX1kdd2"
+```json
+{
+    "optionSets": [
+        {
+            "name": "YES/NO (numeric)",
+            "id": "TdDqpX1kdd2",
+            "code": "YES_NO_NUM",
+            "valueType": "INTEGER_ZERO_OR_POSITIVE",
+            "options": [
+                {
+                    "id": "VavIEUmBv8j"
+                },
+                {
+                    "id": "Xu8ieCbS7jH"
                 }
-            },
-            {
-                "name": "No",
-                "id": "Xu8ieCbS7jH",
-                "code": "0",
-                "sortOrder": 2,
-                "optionSet": {
-                    "id": "TdDqpX1kdd2"
-                }
+            ]
+        }
+    ],
+    "options": [
+        {
+            "name": "Yes",
+            "id": "VavIEUmBv8j",
+            "code": "1",
+            "sortOrder": 1,
+            "optionSet": {
+                "id": "TdDqpX1kdd2"
             }
-        ]
-    }
-    ```
+        },
+        {
+            "name": "No",
+            "id": "Xu8ieCbS7jH",
+            "code": "0",
+            "sortOrder": 2,
+            "optionSet": {
+                "id": "TdDqpX1kdd2"
+            }
+        }
+    ]
+}
+```
 
 This Yes/No option set is based on "INTEGER_ZERO_OR_POSITIVE" option values that are evaluated in predictors in order to determine **Rehabilitation essential package availability at PHC level** and count number of facilities offering essential packages.
 
