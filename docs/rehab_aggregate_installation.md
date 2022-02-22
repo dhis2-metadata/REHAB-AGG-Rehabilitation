@@ -81,7 +81,7 @@ Indicator type is another type of object that can create import conflict because
 
 |Object                  | UID           | API endpoint                                                          |
 |------------------------|---------------|-----------------------------------------------------------------------|
-| Numerator only (number)| `CqNPn5KzksS` | `../api/indicatorTypes.json?filter=number:eq:true&filter=factor:eq:1` |
+| Numerator only (number)| `kHy61PbChXr` | `../api/indicatorTypes.json?filter=number:eq:true&filter=factor:eq:1` |
 
 ### Visualizations using Root Organisation Unit UID
 
@@ -100,12 +100,12 @@ All codes included in the metadata objects in the current package match the nami
 
 For data element values, use:
 
-```SQL
-UPDATE programstageinstance
-SET eventdatavalues = jsonb_set(eventdatavalues, '{"<affected data element uid>","value"}', '"<new value>"')
-WHERE eventdatavalues @> '{"<affected data element uid>":{"value": "<old value>"}}'::jsonb
-AND programstageid=<database_programsatgeid>;
-```
+    ```SQL
+    UPDATE programstageinstance
+    SET eventdatavalues = jsonb_set(eventdatavalues, '{"<affected data element uid>","value"}', '"<new value>"')
+    WHERE eventdatavalues @> '{"<affected data element uid>":{"value": "<old value>"}}'::jsonb
+    AND programstageid=<database_programsatgeid>;
+    ```
 
 ### Sort order for options
 
@@ -121,50 +121,50 @@ Sort order can be adjusted in the Maintenance app.
 
 The Rehabilitation package contains one option set and two options:
 
-```json
-{
-    "optionSets": [
-        {
-            "name": "YES/NO (numeric)",
-            "id": "TdDqpX1kdd2",
-            "code": "YES_NO_NUM",
-            "valueType": "INTEGER_ZERO_OR_POSITIVE",
-            "options": [
-                {
-                    "id": "VavIEUmBv8j"
-                },
-                {
-                    "id": "Xu8ieCbS7jH"
+    ```json
+    {
+        "optionSets": [
+            {
+                "name": "YES/NO (numeric)",
+                "id": "TdDqpX1kdd2",
+                "code": "YES_NO_NUM",
+                "valueType": "INTEGER_ZERO_OR_POSITIVE",
+                "options": [
+                    {
+                        "id": "VavIEUmBv8j"
+                    },
+                    {
+                        "id": "Xu8ieCbS7jH"
+                    }
+                ]
+            }
+        ],
+        "options": [
+            {
+                "name": "Yes",
+                "id": "VavIEUmBv8j",
+                "code": "1",
+                "sortOrder": 1,
+                "optionSet": {
+                    "id": "TdDqpX1kdd2"
                 }
-            ]
-        }
-    ],
-    "options": [
-        {
-            "name": "Yes",
-            "id": "VavIEUmBv8j",
-            "code": "1",
-            "sortOrder": 1,
-            "optionSet": {
-                "id": "TdDqpX1kdd2"
+            },
+            {
+                "name": "No",
+                "id": "Xu8ieCbS7jH",
+                "code": "0",
+                "sortOrder": 2,
+                "optionSet": {
+                    "id": "TdDqpX1kdd2"
+                }
             }
-        },
-        {
-            "name": "No",
-            "id": "Xu8ieCbS7jH",
-            "code": "0",
-            "sortOrder": 2,
-            "optionSet": {
-                "id": "TdDqpX1kdd2"
-            }
-        }
-    ]
-}
-```
+        ]
+    }
+    ```
 
 This Yes/No option set is based on "INTEGER_ZERO_OR_POSITIVE" option values that are evaluated in predictors in order to determine **Rehabilitation essential package availability at PHC level** and count number of facilities offering essential packages.
 
-### Organisation unit groups { #rehab-orgunitgroups }
+### Organisation unit groups and group sets { #rehab-orgunitgroups }
 
 The package includes the following Organisation Unit Groups:
 
@@ -175,20 +175,37 @@ The package includes the following Organisation Unit Groups:
 | REHAB - PHC                  | `bbsxlCu3Vya` | Includes all primary health care facilities reporting on rehabilitation   | Analytics                      |
 | REHAB - SHC                  | `wZJCB2cj9jg` | Includes all secondary health care facilities reporting on rehabilitation | Analytics                      |
 | REHAB - THC                  | `Re0iJ3vtBzE` | Includes all tertiary health care facilities reporting on rehabilitation  | Analytics                      |
-| Rehab inpatient ward         | `AGK6oOK4ncb` | Includes all facilities with a dedicated rehabilitation ward              | Analytics                      |
+| Rehab inpatient ward         | `AGK6oOK4ncb` | Includes all facilities with a dedicated rehabilitation ward              | Analytics                      |
+| Hospital district            | `Y9lBaYVm9j7` | Includes all district hospitals                                           | Analytics                      |
+
+and the following Organisation Unit Group Sets:
+
+| Name                          | UID           | Description                                                               | Purpose   |
+|------------------------------ |---------------|---------------------------------------------------------------------------|-----------|
+| Administrative levels of care | `dSwpdHITQ85` | Administrative levels of care eg. PHC, SHC, THC                           | Analytics |
+| REHAB - Administrative levels | `wkjpdklqOIt` | Rehabilitation levels of care eg. REHAB PHC, REHAB SHC, REHAB THC         | Analytics |
+| Type                          | `VQT2m5uMawR` | Includes types of facilities eg. District Hospitals, Health centres, etc. | Analytics |
 
 These metadata objects have to be configured.
 
-1. If the target instance does not contain any organisation unit groups that match the description of the groups included in the package, follow the steps below for during configuration and import:
+1. If the target instance does not contain any organisation unit groups that match the description of the groups included in the package, follow the steps below during configuration and import:
     1. Import the package together with the included organisation unit groups.
     2. Assign applicable facilities to the new organisation unit groups in the Maintenance app.
 
-2. If the target instance already contains organisation unit groups that match the description for the given metadata objects, follow the steps below for during configuration and import:
+2. If the target instance already contains organisation unit groups that match the description for the given metadata objects, follow the steps below during configuration and import:
 
     1. Note the UIDs of the matching organisation unit groups in the target instance.
     2. Replace all occurences of the organisationUnitGrop UIDs in the metadata json file with the corresponding UIDs noted in step 1.
-    3. Remove the actual affected organisationUnitGroup metadata objects from the metadata json file before import. This step is very important, otherwise the current assignment of the organisation Units to existing groups in the target instance will be overwritten.
+    3. Remove the organisationUnitGroup metadata objects from the metadata json file before import. This step is very important, otherwise the current assignment of the organisation units to existing groups in the target instance will be overwritten.
     4. Proceed to importing the package if no other pre-configuration / editing is required.
+
+3. If the target instance does not contain organisation unit group sets that match the description provided, these organisation unit groups have to be imported into the target instance. The applicable organisation unit groups have to be added to the organisation unit group sets in the user interface or using the API.
+
+4. If the target instance already contains organisation unit group sets that match the description provided, follow the steps below during configuration and import:
+
+    1. Replace the UIDs of the matching organisation unit group sets in the metadata file with the corresponding UIDs of the organisation unit group sets from the target instance.
+    2. Remove the organisation unit group set objects from the metadata file before import. This step is very important, otherwise the current assignment of the organisation unit groups to existing group sets in the target instance will be overwritten.
+    3. Add the newly imported organisation unit groups to the organisation unit group sets. (See tables above).
 
 > **Example**
 >
@@ -200,18 +217,17 @@ The Rehabilitation package includes data elements, indicators and other metadata
 
 The organisation unit levels at which the population data is entered in the target instance may vary.
 
-In the generic Rehabilitation package, this metadata is added to the yearly data set **"REHAB - personnel density"**, which is assigned to facility levels.
+In the generic Rehabilitation package, this metadata is added to the to the facility level data sets listed in the table below.
 
-| Data element                   | UID           | Data Set name             | Data Set UID  | Data set period type | Data Set organisation Units |
-|--------------------------------|---------------|---------------------------|---------------|----------------------|-----------------------------|
-| GEN - Population               | `DkmMEcubiPv` | REHAB - personnel density | `Sm2fALTZROS` | Yearly               | REHAB MFL                   |
-| REHAB - Amputation incidence % | `jEc1P0VAPcs` | REHAB - personnel density | `Sm2fALTZROS` | Yearly               | REHAB MFL                   |
-| REHAB - Burns incidence %      | `rtYJONzb7OY` | REHAB - personnel density | `Sm2fALTZROS` | Yearly               | REHAB MFL                   |
-| REHAB - MMT incidence %        | `jlS0RS2LplZ` | REHAB - personnel density | `Sm2fALTZROS` | Yearly               | REHAB MFL                   |
-| REHAB - SCI incidence %        | `Iy6ylb65g4V` | REHAB - personnel density | `Sm2fALTZROS` | Yearly               | REHAB MFL                   |
-| REHAB - Stroke incidence %     | `OIADGq0kCHW` | REHAB - personnel density | `Sm2fALTZROS` | Yearly               | REHAB MFL                   |
-| REHAB - TBI incidence %        | `rzVRv6GpduW` | REHAB - personnel density | `Sm2fALTZROS` | Yearly               | REHAB MFL                   |
-| tHHAasM37vd
+| Data element                   | UID           | Data Set name                          | Data Set UID  | Data set period type | Data Set organisation Unit Group |
+|--------------------------------|---------------|----------------------------------------|---------------|----------------------|----------------------------------|
+| GEN - Population               | `DkmMEcubiPv` | REHAB - personnel density              | `Sm2fALTZROS` | Yearly               | REHAB - Master Facility List     |
+| REHAB - Amputation incidence % | `jEc1P0VAPcs` | REHAB - bed density and incidence data | `giKizLegiUW` | Yearly               | Rehab inpatient ward             |
+| REHAB - Burns incidence %      | `rtYJONzb7OY` | REHAB - bed density and incidence data | `giKizLegiUW` | Yearly               | Rehab inpatient ward             |
+| REHAB - MMT incidence %        | `jlS0RS2LplZ` | REHAB - bed density and incidence data | `giKizLegiUW` | Yearly               | Rehab inpatient ward             |
+| REHAB - SCI incidence %        | `Iy6ylb65g4V` | REHAB - bed density and incidence data | `giKizLegiUW` | Yearly               | Rehab inpatient ward             |
+| REHAB - Stroke incidence %     | `OIADGq0kCHW` | REHAB - bed density and incidence data | `giKizLegiUW` | Yearly               | Rehab inpatient ward             |
+| REHAB - TBI incidence %        | `rzVRv6GpduW` | REHAB - bed density and incidence data | `giKizLegiUW` | Yearly               | Rehab inpatient ward             |
 
 If the target instance already has metadata infrastructure, which is used for collecting **Population, personnel or incidence data**, please refer to the steps listed below:
 
@@ -239,16 +255,18 @@ The package includes the following predictors:
 | REHAB - Availability (physiotherapists)           | `ydlTJLDcFBj` | yearly      | Skip if all values are missing | REHAB - Availability (physiotherapists)           | `N6ru55bPe1o`             | Facility level           |
 | REHAB - Availability (prosthetists/orthotists)    | `K3QZ2zs0opc` | yearly      | Skip if all values are missing | REHAB - Availability (prosthetists/orthotists)    | `klLHQzY0lw2`             | Facility level           |
 | REHAB - Availability (psychologists)              | `RpxclhlYJxw` | yearly      | Skip if all values are missing | REHAB - Availability (psychologists)              | `pNNIXV0kOus`             | Facility level           |
-| REHAB - Availability (rehabilitation doctors)     | `CbnJeF5K1cM` | yearly      | Skip if all values are missing | REHAB - Availability (rehabilitation doctors)     | `LQ10SQqGKyf`             | Facility level           |
+| REHAB - Availability (rehabilitation doctors)     | `CbnJeF5K1cM` | yearly      | Skip if all values are missing | REHAB - Availability (rehabilitation doctors)     | `LQ10SQqGKyf`             | Facility level           |
 | REHAB - Availability (speech language therapists) | `qHJTzQcMSd4` | yearly      | Skip if all values are missing | REHAB - Availability (speech language therapists) | `SuZDPYOgFbN`             | Facility level           |
+
+Predictor metadata includes organisation unit levels used for aggregation of data values. The package metadata file contains placeholders that need to be replaced with the UIDs of the corresponding organisation unit levels in the target database.
 
 The steps to prepare the predictors for import are described below:
 
-1. Identify the organisationUnitLevel UID of the Facility level at which the data for the predictors will be aggregated.
+1. Identify the organisationUnitLevel UID of the Facility level at which the data for the predictors will be aggregated. Use the following API endpoint to identify the required UID: `../api/organisationUnitLevels.json?fields=id,name`
 2. Find the following organisationUnitLevel placeholders in the json file: `<OU_LEVEL_FACILITY_UID>`
 3. Replace the placeholders with the UID of the identified facility level in the target instance.
 4. Identify the number of the Facility level in the target instance.
-5. Find the propertis of the **output data elements** in the json file, using the UIDs provided in the "Output data element - UID" column.
+5. Find the properties of the **output data elements** in the json file, using the UIDs provided in the "Output data element - UID" column.
 6. Look for property: `"aggregationLevels": [4]`
 7. If the level matches the level in the target instance, keep the number as is. If the Facility level number in the target nstance is different, then adjust the number accordingly.
 
@@ -330,7 +348,7 @@ The data sets must be assigned to organisation units within existing hierarchy i
 
 | Data set                              | UID           | Data set form type | Data collection period | Facility types                                                                                             |
 |---------------------------------------|---------------|--------------------|------------------------|------------------------------------------------------------------------------------------------------------|
-| Bed Density                           | `giKizLegiUW` | default            | yearly                 | Rehabilitation facilities with a dedicated rehabilitation inpatient ward                                   |
+| Bed Density and Incidence Data        | `giKizLegiUW` | default            | yearly                 | Rehabilitation facilities with a dedicated rehabilitation inpatient ward                                   |
 | Essential Package Availability at PHC | `MGzqZDWvPhL` | section            | yearly                 | Primary Healthcare Facilities reporting on Rehabilitation (Rehab PHC)                                      |
 | Personnel Density                     | `Sm2fALTZROS` | section            | yearly                 | All facilities reporting on Rehab (Master Facility List)                                                   |
 | Inpatient Report                      | `WjN1YoDtlOd` | custom             | monthly                | All facilities with an inpatient ward (not dedicated Rehab ward) reporting on Rehab (Master Facility List) |
@@ -396,7 +414,7 @@ If the annual population data is already collected in the existing HMIS, the **"
 | `BLUTcTXPhts`       | Indicator            | Data element is referenced in the denominator |
 | `RFVOIDIULVO`       | Indicator            | Data element is referenced in the denominator |
 
-The level of data collection for **population** and **incidence** data has to be the same. If the population data is collected at district or regional levels, the incidence data elements have to be moved to a separate data set, which will be accessible at the corresponding levels.
+The level of data collection for **incidence** data has to be the same or lower than the level of data collection for **population** data.
 
 The organisation unit assignmnet of the **Personnel density** data set should remain at facility level for the purpose of analytical outputs.
 
