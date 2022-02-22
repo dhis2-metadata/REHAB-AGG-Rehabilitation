@@ -1,2 +1,2 @@
-# REHAB-AGG-Rehabilitation
+# RHAG-Rehabilitation
 Rehabilitation - aggregate metadata package
