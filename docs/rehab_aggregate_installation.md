@@ -12,6 +12,15 @@ Available translations: French, Spanish, Portuguese, Arabic
 
     ```json
     "package": {
+        "DHIS2Build": "834b25f",
+        "DHIS2Version": "2.35.8",
+        "code": "RHAG00",
+        "description": "",
+        "lastUpdated": "20220221T181704",
+        "locale": "en",
+        "name": "RHAG00_DHIS2.35",
+        "type": "AGG",
+        "version": "1.0.0"
     }
     ```
 
@@ -19,15 +28,34 @@ Available translations: French, Spanish, Portuguese, Arabic
 
     ```json
     "package": {
+        "DHIS2Build": "aa38c7f",
+        "DHIS2Version": "2.36.8",
+        "code": "RHAG00",
+        "description": "",
+        "lastUpdated": "20220222T131957",
+        "locale": "en",
+        "name": "RHAG00_DHIS2.36",
+        "type": "AGG",
+        "version": "1.0.0"
     }
     ```
+
 === "DHIS2.37"
 
     ```json
     "package": {
+        "DHIS2Build": "a7328e1",
+        "DHIS2Version": "2.37.3",
+        "code": "RHAG00",
+        "description": "",
+        "lastUpdated": "20220222T132004",
+        "locale": "en",
+        "name": "RHAG00_DHIS2.37",
+        "type": "AGG",
+        "version": "1.0.0"
     }
     ```
-
+    
 ## Installation
 
 Installation of the module consists of several steps:
