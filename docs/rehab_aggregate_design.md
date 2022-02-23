@@ -45,7 +45,7 @@ The data entry forms are logically divided by data collection periods and health
 
 #### Bed Density and Incidence Data
 
-![Bed Density](resources/images/rehab_bed_density_dataset-en.png){ .center width=50% }
+![Bed Density](resources/images/rehab_bed_density_dataset-en.png){ width=50% }
 
 | Bed Density            | `giKizLegiUW`                                                                |
 |------------------------|------------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ Bed density dataset is a standalone dataset that includes 2 sections:
 
 #### Essential Package Availability at PHC
 
-![Essential Package Availability](resources/images/rehab_pkg_availability_dataset-en.png){ .center width=50% }
+![Essential Package Availability](resources/images/rehab_pkg_availability_dataset-en.png){ width=50% }
 
 | Essential Package Availability | `MGzqZDWvPhL`                                             |
 |--------------------------------|-----------------------------------------------------------|
@@ -87,7 +87,7 @@ Essential package availability dataset collects data on the availability of esse
 
 #### Personnel Density
 
-![Rehabilitation occupational groups](resources/images/rehab_personnel_dataset-en.png){ .center width=50% }
+![Rehabilitation occupational groups](resources/images/rehab_personnel_dataset-en.png){ width=50% }
 
 | Personnel Density      | `Sm2fALTZROS`                                                |
 |------------------------|--------------------------------------------------------------|
@@ -109,7 +109,7 @@ This dataset collects numbers of the following rehabilitation groups at faciliti
 
 If these figures are already collected in the existing DHIS2 HMIS system, it is possible to replace the proposed data element and all its occurences with the existing element in the system. Please refer to the [installation guide](#rehab-installation) for information on additional configuration of rehabilitation occupational groups data elements and indicators.
 
-![Population Estimates](resources/images/rehab_population_est_dataset-en.png){ .center width=50% }
+![Population Estimates](resources/images/rehab_population_est_dataset-en.png){ width=50% }
 
 The organisation unit level for collection of population data may vary from use case to use case. Find more information on the configuration of population and personnel data collection in the [installation guide](#rehab-installation).
 
@@ -125,19 +125,19 @@ This data set uses a custom html data entry form that contains four tables:
 
 **Rehabilitation cases** - Total number of inpatients receiving rehabilitation services at inpatient wards that are not dedicated rehabilitation wards and the disaggregation of these cases by age, sex and health condition groups (HCG) that include musculoskeletal, neurological, mental, sensory, cardiovascular, cancer and respiratory HCGs.
 
-![Rehabilitation cases](resources/images/rehab_cases_dataset-en.png){ .center width=50% }
+![Rehabilitation cases](resources/images/rehab_cases_dataset-en.png){ width=50% }
 
 **Rehabilitation uptake** - Total number of sessions provided to inpatients at non-rehabilitation wards and the disaggregation by HCGs
 
-![Rehabilitation uptake](resources/images/rehab_uptake_dataset-en.png){ .center width=50% }
+![Rehabilitation uptake](resources/images/rehab_uptake_dataset-en.png){ width=50% }
 
 **Rehabilitation facility-based uptake** - Number of sessions provided by various rehabilitation occupational groups (rehabilitation doctors, physiotherapists, occupational therapists, speech language therapists, prosthetists/orthotists, psychologists, other personnel)
 
-![Rehabilitation facility-based uptake](resources/images/rehab_facility_uptake_dataset-en.png){ .center width=50% }
+![Rehabilitation facility-based uptake](resources/images/rehab_facility_uptake_dataset-en.png){ width=50% }
 
 **Assistive products (AP)** - Number of assistive products provided to patients disaggregated by age (0-4, 5-17, 18+) and AP groups (mobility, vision, hearing, cognition, communication, self-care) and waiting days for assistive product provision
 
-![Assistive products (AP)](resources/images/rehab_ap_dataset-en.png){ .center width=50% }
+![Assistive products (AP)](resources/images/rehab_ap_dataset-en.png){ width=50% }
 
 #### Rehab Ward Report
 
@@ -151,27 +151,27 @@ This data set uses a custom html data entry form that contains six tables:
 
 **Rehabilitation cases** - Total number of inpatients receiving Rehabilitation services at rehab ward and the disaggregation of these cases by age, sex and health condition groups (HCG) that include musculoskeletal, neurological, mental, sensory, cardiovascular, cancer and respiratory HCGs.
 
-![Rehabilitation cases](resources/images/rehab_cases_dataset-en.png){ .center width=50% }
+![Rehabilitation cases](resources/images/rehab_cases_dataset-en.png){  width=50% }
 
 **Rehabilitation uptake** - Total number of sessions provided to inpatients and the disaggregation by HCGs
 
-![Rehabilitation uptake](resources/images/rehab_uptake_dataset-en.png){ .center width=50% }
+![Rehabilitation uptake](resources/images/rehab_uptake_dataset-en.png){ width=50% }
 
 **Rehabilitation facility-based uptake** - Number of sessions provided by various rehabilitation occupational groups (rehabilitation doctors, physiotherapists, occupational therapists, speech language therapists, prosthetists/orthotists, psychologists, other personnel)
 
-![Rehabilitation facility-based uptake](resources/images/rehab_facility_uptake_dataset-en.png){ .center width=50% }
+![Rehabilitation facility-based uptake](resources/images/rehab_facility_uptake_dataset-en.png){  width=50% }
 
 **Rehabilitation referral** - Total number of new cases accessing the facility during the reporting month and number of referrals disaggregated by assistive product provision and other rehabilitation services.
 
-![Rehabilitation referral](resources/images/rehab_referral_dataset-en.png){ .center width=50% }
+![Rehabilitation referral](resources/images/rehab_referral_dataset-en.png){ width=50% }
 
 **Assistive products (AP)** Number of provided assistive products disaggregated by age (0-4, 5-17, 18+) and AP groups (mobility, vision, hearing, cognition, communication, self-care) and waiting days for assistive product provision
 
-![Assistive products (AP)](resources/images/rehab_ap_dataset-en.png){ .center width=50% }
+![Assistive products (AP)](resources/images/rehab_ap_dataset-en.png){ width=50% }
 
 **Rehabilitation stay** Total number of new cases during reporting month, disaggregated by health conditions (HC) that include SCI, TBI, burns, major multiple trauma, amputation and stroke; number of new cases with a comprehensive individualized care plan; length of stay for discharged cases, number of discharged cases, average functioning score for discharged cases at admission and discharge disaggregated by HCs.
 
-![Rehabilitation stay](resources/images/rehab_stay_dataset-en.png){ .center width=50% }
+![Rehabilitation stay](resources/images/rehab_stay_dataset-en.png){  width=50% }
 
 #### Outpatient Report
 
@@ -185,27 +185,27 @@ This data set uses a custom html data entry form that contains six tables:
 
 **Rehabilitation cases** - Total number of outpatients receiving Rehabilitation services at the facility and the disaggregation of these cases by age, sex and health condition groups (HCG) that include musculoskeletal, neurological, mental, sensory, cardiovascular, cancer and respiratory HCGs.
 
-![Rehabilitation cases](resources/images/rehab_cases_dataset-en.png){ .center width=50% }
+![Rehabilitation cases](resources/images/rehab_cases_dataset-en.png){ width=50% }
 
 **Rehabilitation uptake** - Total number of sessions provided to outpatients and the disaggregation by HCGs
 
-![Rehabilitation uptake](resources/images/rehab_uptake_dataset-en.png){ .center width=50% }
+![Rehabilitation uptake](resources/images/rehab_uptake_dataset-en.png){ width=50% }
 
 **Rehabilitation referral** - Total number of new cases accessing the facility during the reporting month and number of referrals disaggregated by assistive product provision and other rehabilitation services.
 
-![Rehabilitation referral](resources/images/rehab_referral_otpt_dataset-en.png){ .center width=50% }
+![Rehabilitation referral](resources/images/rehab_referral_otpt_dataset-en.png){ width=50% }
 
 **Rehabilitation facility-based uptake** - Number of sessions provided by various rehabilitation occupational groups (rehabilitation doctors, physiotherapists, occupational therapists, speech language therapists, prosthetists/orthotists, psychologists, other personnel), number of new cases (first visits) disaggregated by rehabilitation occupational groups and the total number of waiting days for the first session
 
-![Rehabilitation facility-based uptake](resources/images/rehab_facility_uptake_otpt_dataset-en.png){ .center width=50% }
+![Rehabilitation facility-based uptake](resources/images/rehab_facility_uptake_otpt_dataset-en.png){ width=50% }
 
 **Assistive products (AP)** - Number of assistive products provided to patients disaggregated by age (0-4, 5-17, 18+) and AP groups (mobility, vision, hearing, cognition, communication, self-care) and waiting days for assistive product provision
 
-![Assistive products (AP)](resources/images/rehab_ap_dataset-en.png){ .center width=50% }
+![Assistive products (AP)](resources/images/rehab_ap_dataset-en.png){ width=50% }
 
 **Outreach program uptake** - Number of outreach sessions provided for clients disaggregated by age (0-4, 5-17, 18+) and sex
 
-![Outreach program uptake](resources/images/rehab_outreach_uptake_dataset-en.png){ .center width=50% }
+![Outreach program uptake](resources/images/rehab_outreach_uptake_dataset-en.png){ width=50% }
 
 ### Organisation unit groups
 
