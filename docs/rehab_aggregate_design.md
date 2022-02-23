@@ -1,6 +1,6 @@
 # Rehabilitation Aggregate System Design { #rehab-agg-design }
 
-![Rehabilitation 2030](resources/images/rehab_logo-en.png)
+![](resources/images/rehab_logo-en.png){ .center }
 
 ## Introduction
 
