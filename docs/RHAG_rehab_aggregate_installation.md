@@ -111,7 +111,7 @@ Indicator type is another type of object that can create import conflict because
 |------------------------|---------------|-----------------------------------------------------------------------|
 | Numerator only (number)| `kHy61PbChXr` | `../api/indicatorTypes.json?filter=number:eq:true&filter=factor:eq:1` |
 
-### Visualizations using Root Organisation Unit UID
+### Visualizations using root organisation unit UID
 
 Visualizations, event reports, report tables and maps that are assigned to a specific organisation unit level or organisation unit group, have a reference to the root (level 1) organisation unit. Such objects, if present in the metadata file, contain a placeholder `<OU_ROOT_UID>`. Use the search function in the .json file editor to possibly identify this placeholder and replace it with the UID of the level 1 organisation unit in the target instance.
 
