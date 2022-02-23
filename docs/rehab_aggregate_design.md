@@ -1,6 +1,6 @@
 # Rehabilitation Aggregate System Design { #rehab-agg-design }
 
-![](resources/images/rehab_logo-en.png){ .center width=50% }{ .center }
+![](resources/images/rehab_logo-en.png){ .center }
 
 ## Introduction
 
@@ -43,7 +43,7 @@ The Rehabilitation aggregate package includes 6 proposed data sets for data coll
 
 The data entry forms are logically divided by data collection periods and health care facility types.
 
-#### Bed Density
+#### Bed Density and Incidence Data
 
 ![Bed Density](resources/images/rehab_bed_density_dataset-en.png){ .center width=50% }
 
@@ -263,39 +263,39 @@ Purpose: The two indicators rehabilitation bed density and personnel density are
 
 01.01 - Bed and overall personnel density, (sub)national, last year
 
-![Bed and overall personnel density](resources/images/rehab-0101-en.png){ .center width=50% }
+![Bed and overall personnel density](resources/images/rehab-0101-en.png)
 
 01.02 - Personnel density for different occupational groups (sub)national, last year
 
-![Personnel density for different rehab professions](resources/images/rehab-0102-en.png){ .center width=50% }
+![Personnel density for different rehab professions](resources/images/rehab-0102-en.png)
 
 01.03 - Time trend of bed density, (sub)national, last 5 years
 
-![Timeline of bed density](resources/images/rehab-0103-en.png){ .center width=50% }
+![Timeline of bed density](resources/images/rehab-0103-en.png)
 
 01.04 - Timeline of personnel density per occupational group, (sub)national, last 5 years
 
-![Timeline of personnel density per occupational group](resources/images/rehab-0104-en.png){ .center width=50% }
+![Timeline of personnel density per occupational group](resources/images/rehab-0104-en.png)
 
 01.05 - Map of facilities and number of rehabilitation personnel, last year
 
-![Map of facilities and number of rehabilitation personnel](resources/images/rehab-0105-en.png){ .center width=50% }
+![Map of facilities and number of rehabilitation personnel](resources/images/rehab-0105-en.png)
 
 01.06 - Number of rehab personnel per occupational group, by administrative levels, national, last year
 
-![Number of rehab personnel per occupational group](resources/images/rehab-0106-en.png){ .center width=50% }
+![Number of rehab personnel per occupational group](resources/images/rehab-0106-en.png)
 
 01.07.01 - Facilities (%) reporting on rehab (MFL) per occupational group, PHC level, national, last 5 years
 
-![PHC facilities (%) reporting on rehab (MFL) per occupational group](resources/images/rehab-010701-en.png){ .center width=50% }
+![PHC facilities (%) reporting on rehab (MFL) per occupational group](resources/images/rehab-010701-en.png)
 
 01.07.02 - Facilities (%) reporting on rehab (MFL) per occupational group, SHC level, national, last 5 years
 
-![SHC facilities (%) reporting on rehab (MFL) per occupational group](resources/images/rehab-010702-en.png){ .center width=50% }
+![SHC facilities (%) reporting on rehab (MFL) per occupational group](resources/images/rehab-010702-en.png)
 
 01.07.03 - Facilities (%) reporting on rehab (MFL) per occupational group, THC level, national, last 5 years
 
-![THC facilities (%) reporting on rehab (MFL) per occupational group](resources/images/rehab-010703-en.png){ .center width=50% }
+![THC facilities (%) reporting on rehab (MFL) per occupational group](resources/images/rehab-010703-en.png)
 
 #### REHAB.02 - Output / Rehabilitation-specific service availability
 
@@ -303,23 +303,23 @@ Purpose: WHO recommends the availability of an Essential Package (EP) for rehabi
 
 02.01 - Geographical distribution of PHC facilities (%) offering an EP, (sub)national, last year
 
-![Geographical distribution of PHC facilities (%) offering an EP](resources/images/rehab-0201-en.png){ .center width=50% }
+![Geographical distribution of PHC facilities (%) offering an EP](resources/images/rehab-0201-en.png)
 
 02.02 - Timeline of PHC facilities (%) offering an EP, (sub)national, last 5 years
 
-![Timeline of PHC facilities (%) offering an EP](resources/images/rehab-0202-en.png){ .center width=50% }
+![Timeline of PHC facilities (%) offering an EP](resources/images/rehab-0202-en.png)
 
 02.03 - Map of PHC facilities offering EP and district outpatient utilization data, last year
 
-![PHC facilities offering EP and district outpatient utilization data, last year](resources/images/rehab-0203-en.png){ .center width=50% }
+![PHC facilities offering EP and district outpatient utilization data, last year](resources/images/rehab-0203-en.png)
 
 02.04 - Number of new outpatients accessing PHCs and district hospitals, by districts, last 5 years
 
-![Number of new outpatients accessing PHCs and district hospitals](resources/images/rehab-0204-en.png){ .center width=50% }
+![Number of new outpatients accessing PHCs and district hospitals](resources/images/rehab-0204-en.png)
 
 02.05 - Percentage of PHC facilities offering an EP, per EP type, (sub)national, last year
 
-![% of PHC facilities offering an EP, per EP type](resources/images/rehab-0205-en.png){ .center width=50% }
+![% of PHC facilities offering an EP, per EP type](resources/images/rehab-0205-en.png)
 
 #### REHAB.03 - Output / Rehabilitation service utilization
 
@@ -327,59 +327,59 @@ Purpose: Rehabilitation service utilization is indicative for rehabilitation acc
 
 03.01 - Facility-based rehabilitation sessions: in- and outpatient, (sub)national, last quarter (user organisation unit)
 
-![Facility-based rehabilitation sessions, in- and outpatients](resources/images/rehab-0301-en.png){ .center width=50% }
+![Facility-based rehabilitation sessions, in- and outpatients](resources/images/rehab-0301-en.png)
 
 03.01.01 - Map of facility-based inpatient rehabilitation uptake, last year (user organisation unit)
 
-![Facility-based inpatient rehabilitation uptake](resources/images/rehab-030101-en.png){ .center width=50% }
+![Facility-based inpatient rehabilitation uptake](resources/images/rehab-030101-en.png)
 
 03.01.02 - Map of facility-based outpatient rehabilitation uptake, last year (user organisation unit)
 
-![Facility-based outpatient rehabilitation uptake](resources/images/rehab-030102-en.png){ .center width=50% }
+![Facility-based outpatient rehabilitation uptake](resources/images/rehab-030102-en.png)
 
 03.02 - Rehabilitation uptake and service utilization, total, (sub)national, last quarter (user organisation unit)
 
-![Rehabilitation uptake and service utilization, total](resources/images/rehab-0302-en.png){ .center width=50% }
+![Rehabilitation uptake and service utilization, total](resources/images/rehab-0302-en.png)
 
 03.03.01 - Rehabilitation uptake and service utilization for selected health condition group, (sub)national, last quarter
 
-![Rehabilitation uptake and service utilization - musculoskeletal HCG](resources/images/rehab-030301-en.png){ .center width=50% }
+![Rehabilitation uptake and service utilization - musculoskeletal HCG](resources/images/rehab-030301-en.png)
 
 03.04 - Rehabilitation uptake and service utilization, by health condition group, last quarter (user organisation unit)
 
-![Rehabilitation uptake and service utilization, by health condition group](resources/images/rehab-0304-en.png){ .center width=50% }
+![Rehabilitation uptake and service utilization, by health condition group](resources/images/rehab-0304-en.png)
 
 03.05.01 - Rehabilitation utilization for specific health condition group per geo region, by age group, last quarter (user organisation unit)
 
-![Rehabilitation utilization, musculoskeletal HCG](resources/images/rehab-030501-en.png){ .center width=50% }
+![Rehabilitation utilization, musculoskeletal HCG](resources/images/rehab-030501-en.png)
 
 03.06 - Rehabilitation utilization per health condition group, (sub)national, last quarter (user organisation unit)
 
-![Rehabilitation utilization per health condition group](resources/images/rehab-0306-en.png){ .center width=50% }
+![Rehabilitation utilization per health condition group](resources/images/rehab-0306-en.png)
 
 03.07 - Rehabilitation utilization per health condition group, national, last year (user organisation unit)
 
-![Rehabilitation utilization per health condition group](resources/images/rehab-0307-en.png){ .center width=50% }
+![Rehabilitation utilization per health condition group](resources/images/rehab-0307-en.png)
 
 03.08 - Map of service utilization and personnel density, by districts, (sub)national, last year
 
-![Service utilization and personnel density](resources/images/rehab-0308-en.png){ .center width=50% }
+![Service utilization and personnel density](resources/images/rehab-0308-en.png)
 
 03.09 - AP uptake for in- and outpatients per APL category, (sub)national, last quarter (user organisation unit)
 
-![AP uptake for in- and outpatients per APL category](resources/images/rehab-0309-en.png){ .center width=50% }
+![AP uptake for in- and outpatients per APL category](resources/images/rehab-0309-en.png)
 
 03.10 - Outreach program uptake per age group, (sub)national, last quarter (user organisation unit)
 
-![Outreach program uptake per age group](resources/images/rehab-0310-en.png){ .center width=50% }
+![Outreach program uptake per age group](resources/images/rehab-0310-en.png)
 
 03.11 - Timeline of facility-based uptake per health condition group, national, last 5 years (user organisation unit)
 
-![Timeline of facility-based uptake per health condition group](resources/images/rehab-0311-en.png){ .center width=50% }
+![Timeline of facility-based uptake per health condition group](resources/images/rehab-0311-en.png)
 
 03.12 - Rehabilitation uptake and personnel availability, last year (user organisation unit)
 
-![Rehabilitation uptake and personnel availability](resources/images/rehab-0312-en.png){ .center width=50% }
+![Rehabilitation uptake and personnel availability](resources/images/rehab-0312-en.png)
 
 #### REHAB.04 - Output / Rehabilitation service quality
 
@@ -387,23 +387,23 @@ Purpose: Measures of quality and services outcome for dedicated inpatient rehabi
 
 04.01 - Timeline of patients (%) with individualised care plan, by hospital with dedicated ward, last 6 months (user organisation unit)
 
-![Timeline of patients (%) with individualised care plan](resources/images/rehab-0401-en.png){ .center width=50% }
+![Timeline of patients (%) with individualised care plan](resources/images/rehab-0401-en.png)
 
 04.02.01 - Timeline of LoS for a specific health condition, by hospital with dedicated ward, last 5 years (user organisation unit)
 
-![Timeline of LoS for SCI](resources/images/rehab-040201-en.png){ .center width=50% }
+![Timeline of LoS for SCI](resources/images/rehab-040201-en.png)
 
 04.03 - Functioning change and LoS by health condition, last 6 months (user organisation unit)
 
-![Functioning change and LoS by health condition](resources/images/rehab-0403-en.png){ .center width=50% }
+![Functioning change and LoS by health condition](resources/images/rehab-0403-en.png)
 
 04.04.01 - Functioning change and LoS for a specific health condition, by hospital with dedicated ward, last 6 months (user organisation unit)
 
-![Functioning change and LoS for SCI, by hospital with dedicated ward](resources/images/rehab-040401-en.png){ .center width=50% }
+![Functioning change and LoS for SCI, by hospital with dedicated ward](resources/images/rehab-040401-en.png)
 
 04.05.01 - Timeline of functioning change and LoS for a specific health condition, last 5 years (user organisation unit)
 
-![Timeline of functioning change and LoS for SCI](resources/images/rehab-040501-en.png){ .center width=50% }
+![Timeline of functioning change and LoS for SCI](resources/images/rehab-040501-en.png)
 
 #### REHAB.05 - Outcome / Service coverage
 
@@ -411,37 +411,37 @@ Purpose: Coverage is measured through the percentage of people with acute and co
 
 05.01 - Coverage, by health condition, national, last year
 
-![Coverage, by health condition](resources/images/rehab-0501-en.png){ .center width=50% }
+![Coverage, by health condition](resources/images/rehab-0501-en.png)
 
 05.02.01 - Map of specialised facilities + accessibility for people with acute and complex needs for a specific health condition + bed density data, last year
 
-![Specialised facilities + utilization (SCI) + bed density](resources/images/rehab-050201-en.png){ .center width=50% }
+![Specialised facilities + utilization (SCI) + bed density](resources/images/rehab-050201-en.png)
 
 05.03 - Accessibility for people with acute and complex needs, by health condition, (sub)national, last 6 months (user organisation unit)
 
-![Accessibility for people with acute and complex needs, by health condition](resources/images/rehab-0503-en.png){ .center width=50% }
+![Accessibility for people with acute and complex needs, by health condition](resources/images/rehab-0503-en.png)
 
 05.04 - Timeline of coverage, by health condition, (sub)national, last 5 years
 
-![Timeline of coverage, by health condition](resources/images/rehab-0504-en.png){ .center width=50% }
+![Timeline of coverage, by health condition](resources/images/rehab-0504-en.png)
 
 05.05 - Timeline of accessibility for people with acute and complex needs, by health condition, (sub)national, last 5 years (user organisation unit)
 
-![Timeline of accessibility for people with acute and complex needs, by health condition](resources/images/rehab-0505-en.png){ .center width=50% }
+![Timeline of accessibility for people with acute and complex needs, by health condition](resources/images/rehab-0505-en.png)
 
 #### REHAB.06 - Outcome / Functioning change
 
 06.01 - Functioning change per health condition, by hospital with dedicated ward, last 6 months (user organisation unit)
 
-![Functioning change per health condition, by hospital with dedicated ward](resources/images/rehab-0601-en.png){ .center width=50% }
+![Functioning change per health condition, by hospital with dedicated ward](resources/images/rehab-0601-en.png)
 
 06.02.01 - Timeline of functioning change for a specific health condition, by hospital with dedicated ward, last 5 years (user organisation unit)
 
-![Timeline functioning change for SCI, by hospital with dedicated ward](resources/images/rehab-060201-en.png){ .center width=50% }
+![Timeline functioning change for SCI, by hospital with dedicated ward](resources/images/rehab-060201-en.png)
 
 06.03.01 - Timeline of functioning change (including pre and post scores) for a specific health condition at selected hospital with dedicated ward, last 5 years (user organisation unit)
 
-![Timeline of functioning change (including pre and post scores) for SCI at selected hospital with dedicated ward](resources/images/rehab-060301-en.png){ .center width=50% }
+![Timeline of functioning change (including pre and post scores) for SCI at selected hospital with dedicated ward](resources/images/rehab-060301-en.png)
 
 #### REHAB.07 - Continuum of care
 
@@ -449,27 +449,27 @@ Purpose: This section provides information on the rehabilitation sector performa
 
 07.01 - Timeline of waiting time for AP provision (outpatients) per APL category, for selected subnational region, last 5 years (user organisation unit)
 
-![Timeline of waiting time for AP provision (outpatients) per APL category, for selected subnational region](resources/images/rehab-0701-en.png){ .center width=50% }
+![Timeline of waiting time for AP provision (outpatients) per APL category, for selected subnational region](resources/images/rehab-0701-en.png)
 
 07.02 - Timeline of rehabilitation referrals and rehabilitation waiting time per profession type, for selected administrative level, (sub)national, last 5 years (user organisation unit)
 
-![Timeline of rehabilitation referrals and rehabilitation waiting time per profession type, for THC](resources/images/rehab-0702-en.png){ .center width=50% }
+![Timeline of rehabilitation referrals and rehabilitation waiting time per profession type, for THC](resources/images/rehab-0702-en.png)
 
 07.03 - Rehabilitation waiting time per occupational group, by administrative level, for selected subnational region, last 6 months (user organisation unit)
 
-![Rehabilitation waiting time per occupational group, by administrative level](resources/images/rehab-0703-en.png){ .center width=50% }
+![Rehabilitation waiting time per occupational group, by administrative level](resources/images/rehab-0703-en.png)
 
 07.04 - Number of referrals and outpatients, by administrative level, by geo region, last quarter (user organisation unit)
 
-![Number of referrals and outpatients, by administrative level, by geo region](resources/images/rehab-0704-en.png){ .center width=50% }
+![Number of referrals and outpatients, by administrative level, by geo region](resources/images/rehab-0704-en.png)
 
 07.05 - Referral totals and proportions per administrative level, last 6 months (user organisation unit)
 
-![Referral totals and proportions per administrative level](resources/images/rehab-0705-en.png){ .center width=50% }
+![Referral totals and proportions per administrative level](resources/images/rehab-0705-en.png)
 
 07.06 - Rehab referrals (%) for administrative levels, by subnational region, last 6 months
 
-![Rehab referrals (%) for administrative levels, by subnational region](resources/images/rehab-0705-en.png){ .center width=50% }
+![Rehab referrals (%) for administrative levels, by subnational region](resources/images/rehab-0705-en.png)
 
 > **Note**
 >
