@@ -325,7 +325,7 @@ Purpose: WHO recommends the availability of an Essential Package (EP) for rehabi
 
 Purpose: Rehabilitation service utilization is indicative for rehabilitation accessibility. This part of the indicator set measures the number of rehabilitation sessions and new clients by preset health condition group, the number of assistive products issued, and the number of rehabilitation sessions provided through outreach programs.
 
-03.01 - Facility-based rehabilitation sessions: in- and outpatient, (sub)national, last quarter (user organisation unit)
+03.01 - Facility-based rehabilitation uptake: in- and outpatient, (sub)national, last quarter (user organisation unit)
 
 ![Facility-based rehabilitation sessions, in- and outpatients](resources/images/rehab-0301-en.png)
 
