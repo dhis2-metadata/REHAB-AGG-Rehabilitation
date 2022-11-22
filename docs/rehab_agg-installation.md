@@ -1,60 +1,10 @@
-# Rehabilitation - Aggregate Installation Guide { #rehab-installation }
+# Rehabilitation - Aggregate Installation Guide { #rehab-agg-installation }
 
 This document includes an installation guide for the Rehabilitation aggregate package.
 
 System default language: English
 
 Available translations: French, Spanish, Portuguese, Arabic
-
-## Overview
-
-=== "DHIS2.35"
-
-    ```json
-    "package": {
-        "DHIS2Build": "834b25f",
-        "DHIS2Version": "2.35.8",
-        "code": "RHAG00",
-        "description": "",
-        "lastUpdated": "20220221T181704",
-        "locale": "en",
-        "name": "RHAG00_DHIS2.35",
-        "type": "AGG",
-        "version": "1.0.0"
-    }
-    ```
-
-=== "DHIS2.36"
-
-    ```json
-    "package": {
-        "DHIS2Build": "aa38c7f",
-        "DHIS2Version": "2.36.8",
-        "code": "RHAG00",
-        "description": "",
-        "lastUpdated": "20220222T131957",
-        "locale": "en",
-        "name": "RHAG00_DHIS2.36",
-        "type": "AGG",
-        "version": "1.0.0"
-    }
-    ```
-
-=== "DHIS2.37"
-
-    ```json
-    "package": {
-        "DHIS2Build": "a7328e1",
-        "DHIS2Version": "2.37.3",
-        "code": "RHAG00",
-        "description": "",
-        "lastUpdated": "20220222T132004",
-        "locale": "en",
-        "name": "RHAG00_DHIS2.37",
-        "type": "AGG",
-        "version": "1.0.0"
-    }
-    ```
     
 ## Installation
 
