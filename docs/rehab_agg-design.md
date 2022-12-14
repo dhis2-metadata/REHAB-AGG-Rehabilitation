@@ -226,7 +226,11 @@ The predifined organisation unit groups are listed in the table below:
 | REHAB - THC                  | `Re0iJ3vtBzE` | Includes all tertiary health care facilities reporting on rehabilitation  | Analytics                      |
 | Rehab inpatient ward         | `AGK6oOK4ncb` | Includes all facilities with a dedicated rehabilitation ward              | Analytics                      |
 
-For more information on the configuration of the organisation unit groups, please refer to the [Rehabilitation package installation guide](#rehab-orgunitgroups)
+The Master Facility List for rehabilitation includes those facilities that have a mandate to report on rehabilitation; these commonly include facilities that have rehabilitation workforce, but also facilities that may be providing rehabilitation services/are expected to provide rehabilitation services delivered by non-rehabilitation workforce through task sharing (often primary care facilities).
+
+The Rehab PHC organisation unit group can be further divided into district hospitals and health centres if such disaggregation is relevant for the country.
+
+More information on the configuration of the organisation unit groups, please refer to the [Rehabilitation package installation guide](#rehab-orgunitgroups)
 
 ### Indicators
 
