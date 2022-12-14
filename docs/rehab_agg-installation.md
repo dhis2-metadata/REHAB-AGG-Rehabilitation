@@ -5,14 +5,14 @@ This document includes an installation guide for the Rehabilitation aggregate pa
 System default language: English
 
 Available translations: French, Spanish, Portuguese, Arabic
-    
+
 ## Installation
 
 Installation of the module consists of several steps:
 
-1. [Preparing the metadata file with DHIS2 metadata](#preparing-the-metadata-file).
-2. [Importing the metadata file into DHIS2](#importing-metadata).
-3. [Configuring the imported metadata](#configuration).
+1. [Preparing the metadata file with DHIS2 metadata](#preparing-the-metadata-file)
+2. [Importing the metadata file into DHIS2](#importing-metadata)
+3. [Configuring the imported metadata](#configuration)
 4. [Adapting the program after import](#adapting-the-program)
 
 It is recommended to first read through each section of the installation guide before starting the installation and configuration process in DHIS2. Identify applicable sections depending on the type of your import:
@@ -156,7 +156,13 @@ The package includes the following Organisation Unit Groups:
 | Rehab inpatient ward         | `AGK6oOK4ncb` | Includes all facilities with a dedicated rehabilitation ward              | Analytics                      |
 | Hospital district            | `Y9lBaYVm9j7` | Includes all district hospitals                                           | Analytics                      |
 
-and the following Organisation Unit Group Sets:
+Depending on the the country context, further disaggregations might be required.
+
+> **Example**
+>
+> If data collected for PHC facilities needs to be further disaggregated by district hospitals and health centres, you will need to create and maintain organisation groups **REHAB PHC hospitals** and **REHAB PHC health centres** as part of the **REHAB PHC** organisation unit group set.
+
+The package includes the following Organisation Unit Group Sets:
 
 | Name                          | UID           | Description                                                               | Purpose   |
 |------------------------------ |---------------|---------------------------------------------------------------------------|-----------|
@@ -187,7 +193,7 @@ These metadata objects have to be configured.
 
 > **Example**
 >
-> The target instance may already contain the PHC organisation unit group. In this case, replace the UID `aT5pkgRLbw5` of the group and all its occurences in the json file with the corresponding UID from the target instance before import. Then, remove the orgUnitGroup "PHC" metadata object from the json file. You will find it under ` "organisationUnitGroups": `
+> The target instance may already contain the PHC organisation unit group. In this case, replace the UID `aT5pkgRLbw5` of the group and all its occurences in the json file with the corresponding UID from the target instance before import. Then, remove the orgUnitGroup "PHC" metadata object from the json file. You will find it under ` "organisationUnitGroups" `.
 
 ### Population, incidence and personnel density data
 
@@ -223,18 +229,21 @@ If the target instance already has metadata infrastructure, which is used for co
 
 ### Predictors { #rehab-predictors }
 
-The package includes the following predictors:
+The Rehabilitation package uses predictors to calculate:
 
-| Name                                              | UID           | Period type | Missing value strategy         | Output data element - name                        | Output data element - UID | Organisation unit levels |
-|---------------------------------------------------|---------------|-------------|--------------------------------|---------------------------------------------------|---------------------------|--------------------------|
-| REHAB - Availability (Essential package)          | `zYbrCP7xGtk` | yearly      | Skip if all values are missing | REHAB - Package availability (overall)            | `bUJKsy9u2xv`             | Facility level           |
-| REHAB - Availability (occupational therapists)    | `MaWSMzXDLkm` | yearly      | Skip if all values are missing | REHAB - Availability (occupational therapists)    | `RPKfAe7voO3`             | Facility level           |
-| REHAB - Availability (other personnel)            | `aphqcwJiK5s` | yearly      | Skip if all values are missing | REHAB - Availability (other personnel)            | `qVvudaOdniT`             | Facility level           |
-| REHAB - Availability (physiotherapists)           | `ydlTJLDcFBj` | yearly      | Skip if all values are missing | REHAB - Availability (physiotherapists)           | `N6ru55bPe1o`             | Facility level           |
-| REHAB - Availability (prosthetists/orthotists)    | `K3QZ2zs0opc` | yearly      | Skip if all values are missing | REHAB - Availability (prosthetists/orthotists)    | `klLHQzY0lw2`             | Facility level           |
-| REHAB - Availability (psychologists)              | `RpxclhlYJxw` | yearly      | Skip if all values are missing | REHAB - Availability (psychologists)              | `pNNIXV0kOus`             | Facility level           |
-| REHAB - Availability (rehabilitation doctors)     | `CbnJeF5K1cM` | yearly      | Skip if all values are missing | REHAB - Availability (rehabilitation doctors)     | `LQ10SQqGKyf`             | Facility level           |
-| REHAB - Availability (speech language therapists) | `qHJTzQcMSd4` | yearly      | Skip if all values are missing | REHAB - Availability (speech language therapists) | `SuZDPYOgFbN`             | Facility level           |
+1. the availability of essential rehabilitation packages at health facilities
+2. the availability of personnel based for specific occupational groups
+3. the availability of a specific occupational group at a reporting facility.
+4. The number of facilities reporting on rehabilitation at a specific administrative level each year.
+
+> **IMPORTANT**
+>
+> The rehabilitation package includes indicators that report on the percentage of Rehabilitation facilities at a specific administrative level (PHC, SHC, THC) with minimum number of occupational groups (at least 1, 2 or 3).
+> The denominator for these indicators is the number of facilities within a specific adminstrative level of care that report on Rehabilitation. There are several ways to obtain data for this denominator.
+>
+> 1. Organisation Unit Group counts. It is possible to use organisation unit group counts `OUG{<UID>}` to find the number of facilities that belong to a specific group. However, it is not possible to use this approach when tracking the changes over time.
+> 2. Data elements in a yearly data set, where the number of facilities for a specific administrative level may be entered manually.
+> 3. Data elements that receive yearly values from predictors that run on a yearly basis and generate the number of facilities based on the actual organisation unit group counts each year. This solution is implemented in the current generic package. Please keep in mind the risk of overwriting the generated data for a period of time in the past once the number of facilities within a specific administrative level has changed.
 
 Predictor metadata includes organisation unit levels used for aggregation of data values. The package metadata file contains placeholders that need to be replaced with the UIDs of the corresponding organisation unit levels in the target database.
 
@@ -426,4 +435,4 @@ When adapting metadata, make sure to identify visualizations and dashboards wher
 
 ## Removing metadata
 
-In order to keep your instance clean and avoid errors, it is recommended that you remove the unnecessary metadata from your instance. Removing unnecessary metadat requires advanced knowledge of DHIS2 and various dependenies.
+In order to keep your instance clean and avoid errors, it is recommended that you remove the unnecessary metadata from your instance. Removing unnecessary metadata requires advanced knowledge of DHIS2 and various dependenies.
