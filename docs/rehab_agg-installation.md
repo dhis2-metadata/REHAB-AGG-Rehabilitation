@@ -238,8 +238,8 @@ The Rehabilitation package uses predictors to calculate:
 
 > **IMPORTANT**
 >
-> The rehabilitation package includes indicators that report on the percentage of Rehabilitation facilities at a specific administrative level (PHC, SHC, THC) with minimum number of occupational groups (at least 1, 2 or 3).
-> The denominator for these indicators is the number of facilities within a specific adminstrative level of care that report on Rehabilitation. There are several ways to obtain data for this denominator.
+> The rehabilitation package includes indicators that report on the percentage of facilities at a specific administrative level that report on Rehabilitation (Rehab PHC, Rehab SHC, Rehab THC) with minimum number of occupational groups (at least 1, 2 or 3).
+> The denominator for these indicators is the total number of facilities within a specific adminstrative level of care (PHC, SHC, THC). There are several ways to obtain data for this denominator.
 >
 > 1. Organisation Unit Group counts. It is possible to use organisation unit group counts `OUG{<UID>}` to find the number of facilities that belong to a specific group. However, it is not possible to use this approach when tracking the changes over time.
 > 2. Data elements in a yearly data set, where the number of facilities for a specific administrative level may be entered manually.
