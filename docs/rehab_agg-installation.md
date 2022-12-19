@@ -148,10 +148,13 @@ The package includes the following Organisation Unit Groups:
 
 | Name                         | UID           | Description                                                               | Purpose                        |
 |------------------------------|---------------|---------------------------------------------------------------------------|--------------------------------|
-| PHC                          | `aT5pkgRLbw5` | Primary health care facilities                                            | data set assignment, analytics |
-| REHAB - Master Facility List | `Uvefj6bDfzo` | Includes all facilities reporting on rehabilitation                       | data set assignment, analytics |
+| REHAB - Master Facility List | `Uvefj6bDfzo` | Includes all facilities reporting on rehabilitation                       | Data set assignment, analytics |
+| PHC                          | `aT5pkgRLbw5` | Includes all primary health care facilities                                            | Analytics |
+| PHC facilities with a mandate to allocate rehabilitation workers                          | `JCgLXxVGcRS` | Includes primary healthcare facilities with a mandate to allocate rehabilitation workers                                            | Analytics |
 | REHAB - PHC                  | `bbsxlCu3Vya` | Includes all primary health care facilities reporting on rehabilitation   | Analytics                      |
+| SHC                          | `RbJ4hRSGQaH` | Includes all secondary health care facilities | Analytics                      |
 | REHAB - SHC                  | `wZJCB2cj9jg` | Includes all secondary health care facilities reporting on rehabilitation | Analytics                      |
+| THC                  | `dV8Ec2zJrze` | Includes all tertiary health care facilities | Analytics                      |
 | REHAB - THC                  | `Re0iJ3vtBzE` | Includes all tertiary health care facilities reporting on rehabilitation  | Analytics                      |
 | Rehab inpatient ward         | `AGK6oOK4ncb` | Includes all facilities with a dedicated rehabilitation ward              | Analytics                      |
 | Hospital district            | `Y9lBaYVm9j7` | Includes all district hospitals                                           | Analytics                      |
@@ -238,8 +241,8 @@ The Rehabilitation package uses predictors to calculate:
 
 > **IMPORTANT**
 >
-> The rehabilitation package includes indicators that report on the percentage of facilities at a specific administrative level that report on Rehabilitation (Rehab PHC, Rehab SHC, Rehab THC) with minimum number of occupational groups (at least 1, 2 or 3).
-> The denominator for these indicators is the total number of facilities within a specific adminstrative level of care (PHC, SHC, THC). There are several ways to obtain data for this denominator.
+> The rehabilitation package includes indicators that report on the percentage of facilities at a specific administrative level that report on rehabilitation (Rehab PHC, Rehab SHC, Rehab THC) with minimum number of occupational groups (at least 1, 2 or 3).
+> The denominator for these indicators is the total number of facilities within a specific adminstrative level of care (PHC with a mandate to allocate rehabilitation workers, SHC, THC). There are several ways to obtain data for this denominator.
 >
 > 1. Organisation Unit Group counts. It is possible to use organisation unit group counts `OUG{<UID>}` to find the number of facilities that belong to a specific group. However, it is not possible to use this approach when tracking the changes over time.
 > 2. Data elements in a yearly data set, where the number of facilities for a specific administrative level may be entered manually.
