@@ -219,12 +219,15 @@ The predifined organisation unit groups are listed in the table below:
 
 | Name                         | UID           | Description                                                               | Purpose                        |
 |------------------------------|---------------|---------------------------------------------------------------------------|--------------------------------|
-| PHC                          | `aT5pkgRLbw5` | Primary Health Care Facilities                                            | data set assignment, analytics |
-| REHAB - Master Facility List | `Uvefj6bDfzo` | Includes all facilities reporting on rehabilitation                       | data set assignment, analytics |
-| REHAB - PHC                  | `bbsxlCu3Vya` | Includes all primary health care facilities reporting on rehabilitation   | Analytics                      |
-| REHAB - SHC                  | `wZJCB2cj9jg` | Includes all secondary health care facilities reporting on rehabilitation | Analytics                      |
-| REHAB - THC                  | `Re0iJ3vtBzE` | Includes all tertiary health care facilities reporting on rehabilitation  | Analytics                      |
-| Rehab inpatient ward         | `AGK6oOK4ncb` | Includes all facilities with a dedicated rehabilitation ward              | Analytics                      |
+| REHAB - Master Facility List | `Uvefj6bDfzo` | Includes all facilities reporting on rehabilitation                       | Data set assignment, analytics |
+| PHC                          | `aT5pkgRLbw5` | Includes all primary health care facilities                                            | Analytics |
+| PHC facilities with a mandate to allocate rehabilitation workers | `JCgLXxVGcRS` | Includes all primary healthcare facilities with a mandate to allocate rehabilitation workers | Analytics |
+| REHAB - PHC                  | `bbsxlCu3Vya` | Includes all primary health care facilities reporting on rehabilitation   | Analytics |
+| SHC                          | `RbJ4hRSGQaH` | Includes all secondary health care Facilities                                            | Analytics |
+| REHAB - SHC                  | `wZJCB2cj9jg` | Includes all secondary health care facilities reporting on rehabilitation | Analytics |
+| THC                          | `dV8Ec2zJrze` | Includes all tertiary Health Care Facilities                                            | Analytics |
+| REHAB - THC                  | `Re0iJ3vtBzE` | Includes all tertiary health care facilities reporting on rehabilitation  | Analytics |
+| Rehab inpatient ward         | `AGK6oOK4ncb` | Includes all facilities with a dedicated rehabilitation ward              | Analytics |
 
 The Master Facility List for rehabilitation includes those facilities that have a mandate to report on rehabilitation; these commonly include facilities that have rehabilitation workforce, but also facilities that may be providing rehabilitation services/are expected to provide rehabilitation services delivered by non-rehabilitation workforce through task sharing (often primary care facilities).
 
