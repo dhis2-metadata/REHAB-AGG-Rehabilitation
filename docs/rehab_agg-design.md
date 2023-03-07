@@ -247,18 +247,7 @@ The configuration of these validation rules is described in more detail in the [
 
 ### Predictors
 
-The Rehabilitation package includes a set of predictors that are used to produce data values for rehabilitation occupational groups and rehabilitation package availability indicators:
-
-| Name                                              | UID           | Period type |
-|---------------------------------------------------|---------------|-------------|
-| REHAB - Availability (Essential package)          | `zYbrCP7xGtk` | yearly      |
-| REHAB - Availability (occupational therapists)    | `MaWSMzXDLkm` | yearly      |
-| REHAB - Availability (other personnel)            | `aphqcwJiK5s` | yearly      |
-| REHAB - Availability (physiotherapists)           | `ydlTJLDcFBj` | yearly      |
-| REHAB - Availability (prosthetists/orthotists)    | `K3QZ2zs0opc` | yearly      |
-| REHAB - Availability (psychologists)              | `RpxclhlYJxw` | yearly      |
-| REHAB - Availability (rehabilitation doctors)     | `CbnJeF5K1cM` | yearly      |
-| REHAB - Availability (speech language therapists) | `qHJTzQcMSd4` | yearly      |
+The Rehabilitation package includes a set of predictors that are used to produce data values for rehabilitation occupational groups, rehabilitation master facility list and rehabilitation package availability.
 
 ### Dashboards
 
