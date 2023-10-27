@@ -1,4 +1,4 @@
-# Rehabilitation Aggregate System Design { #rehab-agg-design }
+# Rehabilitation System Design { #rehab-agg-design }
 
 ![](resources/images/rehab_logo-en.png){ .center }
 
